@@ -17,3 +17,5 @@ F3:: {
 		sleep, 1140000 ; Equal to 19 minutes
 	}
 }
+
+Esc::ExitApp
