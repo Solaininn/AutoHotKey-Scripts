@@ -1,4 +1,6 @@
-﻿toggle := false
+; Simple autoclicker using f6 as toggle
+
+toggle := false
 
 F6::{
     global toggle
@@ -6,7 +8,7 @@ F6::{
 
     while toggle {
         Click "Right"
-        Sleep 50  ; click speed in milliseconds
+        Sleep 50 ; click speed in milliseconds
     }
 }
 
