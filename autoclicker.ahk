@@ -4,12 +4,17 @@ toggle := false
 
 F6::{
     global toggle
+
     toggle := !toggle
 
-    while toggle {
-        Click "Right"
-        Sleep 50 ; click speed in milliseconds
-    }
+    if toggle
+        SetTimer(AutoClick, 50)   ; click speed in milliseconds
+    else
+        SetTimer(AutoClick, 0)     ; Stop the timer
+}
+
+AutoClick() {
+    Click "Right"
 }
 
 Esc::ExitApp
